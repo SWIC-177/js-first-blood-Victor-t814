@@ -1,9 +1,14 @@
-const name = "Victor";
-const age = 28;
-function verifyAdulthood(inputName, inputAge) {
-  if (inputAge >= 18) {
-    return `Welcome ${inputName}!`;
-  }
-  return `Your are not old enough to enter, ${inputName}!`;
+const person = {
+  name: "John",
+  age: 20,
+};
+
+function verifyAdulthood(personName, personAge) {
+  if (personAge >= 18) return `Welcome, ${personName}!`;
+
+  return `You are not old enough to enter, ${personName}.`;
 }
-console.log(verifyAdulthood(name, age));
+
+const adultMessage = verifyAdulthood(person.name, person.age);
+
+console.log(adultMessage);

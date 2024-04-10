@@ -25,3 +25,17 @@ newValue = changeValue(newValue);
 console.log(`the original value was ${value}`);
 console.log(`the new value is ${newValue}`);
 //--------------------------------------------
+const car = {
+  make: "Toyota",
+  model: "Camry",
+  year: 2010,
+};
+
+function updateYear(carObj, newYear) {
+  const carUpdate = { ...carObj };
+  carUpdate.year = newYear;
+}
+
+updateYear(car, 2015);
+
+console.log(car);

@@ -1,31 +1,27 @@
-const people = [
-  {
-    name: "John",
-    age: 17,
-  },
-  {
-    name: "Jane",
-    age: 20,
-  },
-  {
-    name: "Mary",
-    age: 25,
-  },
-  {
-    name: "Peter",
-    age: 30,
-  },
-  {
-    name: "Paul",
-    age: 35,
-  },
-];
+const dog = "scooter";
+let newDog = dog;
 
-function verifyAdulthood(personName, personAge) {
-  if (personAge >= 18) return `Welcome, ${personName}!`;
+console.log(`my first dog was ${dog}`);
+console.log(` my new dog is ${newDog}`);
 
-  return `You are not old enough to enter, ${personName}.`;
+newDog = "chuck";
+
+console.log(`my first dog was ${dog}`);
+console.log(` my new dog is ${newDog}`);
+
+newDog = "max";
+
+console.log(`my first dog was ${dog}`);
+console.log(` my new dog is ${newDog}`);
+//--------------------------------------------
+const value = 42;
+let newValue = value;
+
+function changeValue(add) {
+  return add + 8;
 }
-people.forEach((person) => {
-  console.log(verifyAdulthood(person.name, person.age));
-});
+newValue = changeValue(newValue);
+
+console.log(`the original value was ${value}`);
+console.log(`the new value is ${newValue}`);
+//--------------------------------------------
